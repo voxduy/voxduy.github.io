@@ -120,9 +120,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: "voxduy/voxduy.github.io"
-    repo_id: "R_kgDOM46PjA"
+    repo_id: "R_kgDOM5-eAg"
     category: "Announcements"
-    category_id: "DIC_kwDOM46PjM4Ci7eh"
+    category_id: "DIC_kwDOM5-eAs4Ci9sm"
     mapping: "pathname" # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: "bottom" # optional, default to 'bottom'
