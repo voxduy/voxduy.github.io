@@ -25,7 +25,7 @@ You failed, as you should.
 
 UDP is connectionless, so you just send the service request (“I need all the data for this thing here”) with source IP in.no.cent.vic to the server, which promptly obliges by immediately sending, well, all the data to in.no.cent.vic. Multiply that by a few million requests over a few thousand servers, and you get your DDoS.
 
-![udp-reflection-attack](/posts/2020-09-20-The UDP-so-often-used-in-DDoS/udp-reflection-attack.png)
+![udp-reflection-attack](/posts/2020-09-20-The-UDP-so-often-used-in-DDoS/udp-reflection-attack.png)
 _UDP Reflection Attack_
 
 Of course, far more services use TCP than UDP, but DNS is one UDP-based service that is popularly used for DDoS attacks precisely because there are thousands of DNS servers around the Internet, and DNS response packets can be 50 or so times as large as the corresponding requests.
