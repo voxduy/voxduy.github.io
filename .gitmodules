@@ -1,3 +1,6 @@
 [submodule "assets/lib"]
 	path = assets/lib
 	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "assets/dev-images"]
+	path = assets/voxduy-static-assets
+	url = https://github.com/voxduy/voxduy-static-assets.git
