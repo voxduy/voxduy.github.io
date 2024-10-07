@@ -1,6 +1,6 @@
 ---
 title: Tại sao giao thức UDP thường xuyên bị tấn công DDoS?
-#author: voxduy
+author: voxduy
 date: 2020-09-20 15:00:00 +0700
 categories: [Network, DDoS]
 tags: [Network, DDoS, Security]
