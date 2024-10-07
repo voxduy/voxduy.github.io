@@ -38,6 +38,8 @@ System Skill:
 - Docker
 - VMWare ESXi
 
+Finally, I fucking love Raspberry Pi!
+
 My Personal Website _ https://voxduy.github.io
 Github _ https://github.com/voxduy
 ^^
