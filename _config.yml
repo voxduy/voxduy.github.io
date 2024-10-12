@@ -16,7 +16,7 @@ timezone: Asia/Ho_Chi_Minh
 
 title: Vo Duy's Cave # the main title
 
-tagline: Here is my cave! ^^ # it will display as the subtitle
+tagline: Here is my cave ^^! A place to learn and share knowledge # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

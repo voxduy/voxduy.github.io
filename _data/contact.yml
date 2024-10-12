@@ -3,16 +3,18 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
-
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: linkedin
+  icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
+  url: "https://www.linkedin.com/in/vonhatduy" # Fill with your Linkedin homepage
+
+- type: telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/null0_byte"
+#
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
@@ -38,3 +40,10 @@
 # - type: threads
 #   icon: 'fa-brands fa-threads'
 #   url: ''                   # Fill with your Threads profile link
+#
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+#
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true

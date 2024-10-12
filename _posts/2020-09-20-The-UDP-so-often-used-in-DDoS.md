@@ -1,5 +1,5 @@
 ---
-title: Tại sao giao thức UDP thường xuyên bị tấn công DDoS?
+title: Why is the User Datagram Protocol UDP so usually used in DDoS attacks?
 author: voxduy
 date: 2020-09-20 15:00:00 +0700
 categories: [Network, DDoS]
@@ -8,7 +8,10 @@ image:
   path: /posts/2020-09-20-The-UDP-so-often-used-in-DDoS/cyber-blog-ddos-attacks.png
   width: 800
   height: 500
+pin: false
 ---
+
+## Explanation
 
 In three words: connectionless spoofed amplification.
 
@@ -29,3 +32,11 @@ UDP is connectionless, so you just send the service request (“I need all the d
 _UDP Reflection Attack_
 
 Of course, far more services use TCP than UDP, but DNS is one UDP-based service that is popularly used for DDoS attacks precisely because there are thousands of DNS servers around the Internet, and DNS response packets can be 50 or so times as large as the corresponding requests.
+
+[CISA - DNS Amplification Attacks](https://www.cisa.gov/uscert/ncas/alerts/TA13-088A)
+
+## Wrapping up
+
+## References
+
+- [UDP reflection attacks](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/udp-reflection-attacks.html)
