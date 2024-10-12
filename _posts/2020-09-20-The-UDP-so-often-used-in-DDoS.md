@@ -21,10 +21,10 @@ But how do you do that redirection? That’s where source IP spoofing comes in, 
 
 See, TCP requires you to establish a connection before you can talk to the other party. Clearly, you don’t want to have that connection be to you, so here’s what happens:
 
-You send a connection request (SYN) to server with source IP in.no.cent.vic.
-Server sends a request+acknowledgement (SYN+ACK) to in.no.cent.vic to confirm the connection.
-in.no.cent.vic goes WTF? and rejects the request.
-You failed, as you should.
+1. You send a connection request (SYN) to server with source IP in.no.cent.vic.
+2. Server sends a request+acknowledgement (SYN+ACK) to in.no.cent.vic to confirm the connection.
+3. 'in.no.cent.vic' goes WTF? and rejects the request.
+4. You failed, as you should.
 
 UDP is connectionless, so you just send the service request (“I need all the data for this thing here”) with source IP in.no.cent.vic to the server, which promptly obliges by immediately sending, well, all the data to in.no.cent.vic. Multiply that by a few million requests over a few thousand servers, and you get your DDoS.
 
@@ -36,6 +36,11 @@ Of course, far more services use TCP than UDP, but DNS is one UDP-based service 
 [CISA - DNS Amplification Attacks](https://www.cisa.gov/uscert/ncas/alerts/TA13-088A)
 
 ## Wrapping up
+
+Just by this joke image
+
+![tcp_&_udp_joke](/posts/2020-09-20-The-UDP-so-often-used-in-DDoS/tcp_&_udp_joke.png)
+_TCP & UDP - Just one image_
 
 ## References
 
