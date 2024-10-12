@@ -39,7 +39,7 @@ Of course, far more services use TCP than UDP, but DNS is one UDP-based service 
 
 Just by this joke image
 
-![tcp_&_udp_joke](/posts/2020-09-20-The-UDP-so-often-used-in-DDoS/tcp_&_udp_joke.png)
+![tcp-&-udp-joke](/posts/2020-09-20-The-UDP-so-often-used-in-DDoS/tcp-&-udp-joke.png)
 _TCP & UDP - Just one image_
 
 ## References
