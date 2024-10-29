@@ -8,6 +8,9 @@ order: 4
 
 ---
 
+LEARNING - Kubernetes
+RESEARCHING - eBPF for DDoS Protection
+
 - Vo Nhat Duy
 - Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps
 - nhatduy.inet.s3c@gmail.com
@@ -35,11 +38,12 @@ System Skill:
 - Git Skills
 - Web Server _ Proxy (NGINX)
 - Monitoring System (Cacti, Nagios, Zabbix,..)
+- ELK
 - Docker
 - VMWare ESXi
 
 Finally, I fucking love Raspberry Pi!
 
-My Personal Website _ https://voxduy.github.io
+My Personal Website _ https://null0.bytebytedance.io.vn
 Github _ https://github.com/voxduy
 ^^
