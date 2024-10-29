@@ -8,8 +8,8 @@ order: 4
 
 ---
 
-LEARNING - Kubernetes
-RESEARCHING - eBPF for DDoS Protection
+- LEARNING _ Kubernetes
+- RESEARCHING _ eBPF for DDoS Protection
 
 - Vo Nhat Duy
 - Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps
