@@ -3,7 +3,7 @@ title: Giải thích về cơ chế tấn công DDoS - SSDP Amplification
 author: voxduy
 date: 2021-04-30 15:00:00 +0700
 categories: [Network, DDoS]
-tags: [Network, DDoS, Security]
+tags: [network, ddos, security]
 image:
   path: /posts/2021-04-30-how-does-a-ssdp-attack-work/ddos_is_coming.png
   width: 800

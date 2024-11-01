@@ -3,7 +3,7 @@ title: A quick note - How do SSL/TLS certificate works?
 author: voxduy
 date: 2024-10-25 17:45:00 +0700
 categories: [Security]
-tags: [Security]
+tags: [security]
 image:
   path: /posts/2024-10-25-how-do-ssl-tls-works/ssl-tls.png
   width: 800
