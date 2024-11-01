@@ -3,7 +3,7 @@ title: Why is the User Datagram Protocol UDP so usually used in DDoS attacks?
 author: voxduy
 date: 2020-09-20 15:00:00 +0700
 categories: [Network, DDoS]
-tags: [Network, DDoS, Security]
+tags: [network, ddoS, security]
 image:
   path: /posts/2020-09-20-The-UDP-so-often-used-in-DDoS/cyber-blog-ddos-attacks.png
   width: 800
