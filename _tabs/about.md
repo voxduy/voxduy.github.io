@@ -13,9 +13,9 @@ Some of words for introduction myself:
 + **RESEARCHING** - eBPF for DDoS Protection
 + And I fucking love Raspberry Pi.
 
-- Full Name - Vo Nhat Duy
-- Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps
-- Email - nhatduy.inet.s3c@gmail.com
+Full Name - Vo Nhat Duy  
+Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps  
+Email - nhatduy.inet.s3c@gmail.com
 
 I've worked on various networking phases such as planning, design, implementation, troubleshooting, supporting, verifying and testing... also worked with network vendors: Juniper (the most working time), Cisco, Dell, HP, Fortinet, H3C, Huawei, Aruba,… Besides, I'm an main person for implementation, maintenance & operation DDoS Protection System.
 
@@ -44,6 +44,6 @@ I've worked on various networking phases such as planning, design, implementatio
 + Docker
 + VMWare ESXi
 
-- **My Personal Website** - https://bytebytedance.io.vn
+- **My Personal Website** - https://bytebytedance.io.vn  
 - **Github** - https://github.com/voxduy
 ^^

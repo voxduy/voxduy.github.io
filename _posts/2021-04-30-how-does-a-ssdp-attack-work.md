@@ -14,7 +14,7 @@ pin: false
 ## Giới thiệu giao thức SSDP
 
 - SSDP (Simple Service Discovery Protocol) là một giao thức thuộc lớp ứng dụng trong mô hình OSI, sử dụng để tìm kiếm các dịch vụ và thiết bị trên mạng IP cục bộ. SSDP là một phần của kiến trúc UPnP (Universal Plug and Play), được sử dụng rộng rãi để tự động phát hiện các thiết bị mạng mà không cần cấu hình thủ công.
-- SSDP hoạt động dựa trên UDP (User Datagram Protocol), cụ thể là port 1900. Các gói tin SSDP được gửi qua multicast tới địa chỉ IP (239.255.255.250) trong mạng cục bộ để gửi các request hoặc notification.
+- SSDP hoạt động dựa trên UDP (User Datagram Protocol), cụ thể là port 1900. Các gói tin SSDP được gửi qua multicast tới địa chỉ IP (239.255.255.250) trong mạng LAN để gửi các request hoặc notification.
 
 Ứng dụng của giao thức SSDP:
 - **Thiết bị gia đình thông minh**: SSDP là một phần quan trọng của UPnP và được sử dụng rộng rãi trong các hệ thống gia đình thông minh để kết nối và điều khiển các thiết bị như đèn, loa, TV và thiết bị bảo mật.
