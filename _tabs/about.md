@@ -3,7 +3,9 @@
 icon: fas fa-info-circle
 order: 4
 ---
+
 <img src="/commons/IMG_0093.JPG" alt="my profile image" style="width: 240px;">
+
 ---
 
 > Hi there! It's a pleasure to see you here. Let some any words if you visited this site ^^
