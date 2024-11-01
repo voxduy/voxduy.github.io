@@ -91,21 +91,21 @@ USN: uuid:device-UUID::upnp:rootdevice
 ### 6. **Lưu lượng tấn công đổ vào mục tiêu**
 - Phản hồi từ các thiết bị SSDP sẽ được gửi đến địa chỉ IP của nạn nhân do đã giả mạo địa chỉ IP nguồn. Điều này tạo ra một lưu lượng lớn đổ vào mục tiêu, gây ra **quá tải băng thông** hoặc **tắc nghẽn dịch vụ** tại máy chủ, hệ thống, hoặc mạng của mục tiêu.
 
-- **Tỷ lệ khuếch đại**: Do phản hồi SSDP thường lớn hơn nhiều so với yêu cầu ban đầu, cuộc tấn công có thể khuếch đại lưu lượng một cách đáng kể. Chỉ cần gửi một lượng nhỏ yêu cầu, nạn nhân có thể bị ngập trong hàng gigabyte dữ liệu phản hồi.
+- Do phản hồi SSDP thường lớn hơn nhiều so với yêu cầu ban đầu, cuộc tấn công có thể khuếch đại lưu lượng một cách đáng kể. Chỉ cần gửi một lượng nhỏ yêu cầu, nạn nhân có thể bị ngập trong hàng gigabyte dữ liệu phản hồi.
 
 ### 7. **Tấn công DDoS thành công**
-Khi lượng lớn lưu lượng SSDP phản hồi đổ vào mục tiêu, kết quả có thể là:
-- **Tắc nghẽn băng thông**: Băng thông mạng của nạn nhân bị quá tải, làm chậm lại hoặc ngừng hoàn toàn kết nối với các dịch vụ hợp lệ.
+Khi lượng lớn SSDP Response đổ vào mục tiêu, kết quả có thể là:
+- **Nghẽn băng thông**: Băng thông mạng của nạn nhân bị quá tải, làm chậm lại hoặc ngừng hoàn toàn kết nối với các dịch vụ hợp lệ.
 - **Quá tải tài nguyên hệ thống**: Hệ thống của nạn nhân phải xử lý lượng lớn dữ liệu phản hồi không mong muốn, dẫn đến quá tải tài nguyên CPU hoặc bộ nhớ.
 - **Ngừng hoạt động dịch vụ**: Cuộc tấn công thành công nếu hệ thống mục tiêu không thể phục vụ các yêu cầu hợp lệ từ người dùng, dẫn đến việc dịch vụ bị gián đoạn hoặc ngừng hoạt động.
 
 ## Tại sao **SSDP** lại dễ bị lợi dụng để thực hiện các cuộc tấn công **DDoS**
 
 ### 1. **Không có cơ chế xác thực**:
-SSDP là một phần của UPnP và được thiết kế để đơn giản, dễ sử dụng cho các thiết bị trong mạng nội bộ. Tuy nhiên, do không có cơ chế xác thực, bất kỳ thiết bị nào cũng có thể gửi và nhận yêu cầu SSDP mà không cần kiểm tra danh tính. Điều này làm cho SSDP dễ bị khai thác bởi các hacker khi sử dụng để gửi các yêu cầu giả mạo (spoofed requests) từ các địa chỉ IP nạn nhân.
+Bất kỳ thiết bị nào cũng có thể gửi và nhận yêu cầu SSDP mà không cần kiểm tra danh tính. Điều này làm cho SSDP dễ bị khai thác để gửi các yêu cầu giả mạo (spoofed requests) từ các địa chỉ IP nạn nhân.
 
 ### 2. **Khuếch đại lưu lượng (Traffic Amplification)**:
-- **Tấn công khuếch đại SSDP (SSDP Amplification Attack)** là một hình thức phổ biến của tấn công DDoS, trong đó lợi dụng tính chất phản hồi của SSDP.
+- SSDP Amplification Attack là một hình thức phổ biến của tấn công DDoS, trong đó lợi dụng tính chất phản hồi của SSDP.
 - Khi một thiết bị nhận được một yêu cầu SSDP, nó thường phản hồi lại với thông tin chi tiết về các dịch vụ của nó. Những phản hồi này thường lớn hơn nhiều so với yêu cầu ban đầu, dẫn đến hiện tượng **khuếch đại**. Tỉ lệ khuếch đại của SSDP có thể lên đến **30-40 lần** so với kích thước của gói tin ban đầu.
 - Kẻ tấn công sẽ gửi yêu cầu SSDP giả mạo với địa chỉ IP nguồn là IP của nạn nhân. Khi các thiết bị phản hồi, chúng sẽ gửi lượng lớn dữ liệu đến nạn nhân, gây ra hiện tượng nghẽn mạng, khiến hệ thống của nạn nhân bị quá tải.
 
@@ -127,9 +127,9 @@ Dù SSDP được thiết kế cho mạng nội bộ, một số thiết bị l�
 ## Wrapping up
 
 - Phòng ngừa cuộc tấn công SSDP:
-1. **Tắt SSDP và UPnP trên thiết bị nếu không cần thiết**: Nhiều thiết bị mạng, đặc biệt là thiết bị IoT, hỗ trợ SSDP theo mặc định. Nếu không cần sử dụng UPnP, nên tắt tính năng này.
-2. **Cấu hình tường lửa để chặn SSDP từ internet**: Tường lửa nên được cấu hình để chặn lưu lượng UDP trên cổng 1900 từ các nguồn bên ngoài (Internet), chỉ cho phép lưu lượng SSDP nội bộ.
-3. **Giới hạn băng thông**: Cấu hình giới hạn băng thông cho các dịch vụ SSDP hoặc UDP để giảm thiểu tác động của các cuộc tấn công DDoS khuếch đại.
+1. **Turn-off SSDP and UPnP**: Nhiều thiết bị mạng, đặc biệt là thiết bị IoT, hỗ trợ SSDP theo mặc định. Nếu không cần sử dụng UPnP, nên tắt tính năng này.
+2. **Configure firewall to prevent SSDP from the internet**: Firewall nên được cấu hình để chặn lưu lượng UDP trên cổng 1900 từ các nguồn bên ngoài (Internet), chỉ cho phép lưu lượng SSDP nội bộ.
+3. **Bandwidth limitation**: Cấu hình giới hạn băng thông cho các dịch vụ SSDP hoặc UDP để giảm thiểu tác động của các cuộc tấn công DDoS Amplification.
 
 - Ngoài ra, ở link tham khảo bên dưới, Cloudflare có giới thiêu một trang web để check xem đường WAN hay thiết bị của mình hiện tại có đang bị lợi dụng để tấn công SSDP hay không (free nhé).
 
