@@ -37,7 +37,7 @@ Brief summary cách hoạt động của SSDP:
 
 ## Cơ chế tấn công DDoS - SSDP Amplification
 
-![ddos-ssdp-amplification](/posts/2021-04-30-how-does-a-ssdp-attack-work/ddos_is_coming.png)
+![ddos-ssdp-amplification](/posts/2021-04-30-how-does-a-ssdp-attack-work/ssdp_amplification.png)
 _DDoS SSDP Amplification_
 
 Như đã trình bày cách thức của giao thức SSDP ở trên, vậy tấn công DDoS bằng SSDP là việc lợi dụng cơ chế hoạt động của SSDP để gửi các yêu cầu SSDP giả mạo đến các thiết bị hỗ trợ SSDP và sau đó chuyển hướng phản hồi từ các thiết bị này đến nạn nhân. Quá trình diễn ra như sau:
