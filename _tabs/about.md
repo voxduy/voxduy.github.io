@@ -44,6 +44,6 @@ I've worked on various networking phases such as planning, design, implementatio
 + Docker
 + VMWare ESXi
 
-- **My Personal Website** - https://bytebytedance.io.vn  
-- **Github** - https://github.com/voxduy
+**My Personal Website** - https://bytebytedance.io.vn  
+**Github** - https://github.com/voxduy  
 ^^
