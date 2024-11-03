@@ -1,5 +1,6 @@
 ---
 title: Docker Commands - Frequently Used
+description: This is a collection of docker commands that I have ever been. And I still keep it up-to-date currently.
 author: voxduy
 date: 2024-04-14 12:00:00 +0700
 categories: [Docker]
@@ -11,9 +12,7 @@ image:
 pin: true
 ---
 
-This is a collection of docker commands that I have ever been. And I still keep it up-to-date currently.
-
-# Init Docker
+## Init Docker
 
 Install docker using the convenience script
 
@@ -22,7 +21,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh --dry-run
 ```
 
-# Run a new container
+## Run a new container
 
 Start a new container
 
@@ -43,7 +42,7 @@ Map all port
 docker run -P IMAGE
 ```
 
-# Manage containers
+## Manage containers
 
 A list of running containers
 
@@ -87,7 +86,7 @@ Start a stopped container
 docker start CONTAINER
 ```
 
-# Manage images
+## Manage images
 
 Download an image from a Docker registry
 
@@ -113,7 +112,7 @@ Build & tag an image from a Dockerfile
 docker build -t IMAGE DIRECTORY
 ```
 
-# Docker network
+## Docker network
 
 Lists all Docker networks
 
@@ -133,7 +132,7 @@ Remove a docker network
 docker network rm reverseproxy-nw
 ```
 
-# Info & Stats
+## Info & Stats
 
 Show installed docker version
 
@@ -165,7 +164,7 @@ Show processes of container
 docker top CONTAINER
 ```
 
-# Docker compose
+## Docker compose
 
 - Start containers which are defined in docker-compose.yml
 
@@ -230,7 +229,7 @@ Ex: say you have API and portal services then you can do something like below. W
 docker-compose logs -t -f --tail 5 portal api
 ```
 
-# Operation & Tshoot
+## Operation & Tshoot
 
 1. **ERROR >>>  'ContainerConfig'**
 
