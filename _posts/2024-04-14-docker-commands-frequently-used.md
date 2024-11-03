@@ -305,13 +305,13 @@ Nếu bạn muốn dừng tất cả các container trước khi nâng cấp và
 Sử dụng command sau để kiểm tra xem một container Docker có được cấu hình để tự động khởi động lại sau khi restart server hay không:
 
 ```bash
-docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' <container_name_or_id>
+docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' <CONTAINER_OR_ID>
 ```
 
 Trong đó:
-- `<container_name_or_id>` là tên hoặc ID của container mà bạn muốn kiểm tra.
+- `<CONTAINER_OR_ID>` là tên hoặc ID của container mà bạn muốn kiểm tra.
 
-> Các giá trị có thể của Restart Policy:
+> Restart Policy:
 > - **no**: Container sẽ không tự động khởi động lại.
 > - **always**: Container sẽ tự động khởi động lại bất cứ khi nào nó dừng lại hoặc khi hệ thống khởi động lại.
 > - **unless-stopped**: Container sẽ tự động khởi động lại trừ khi nó được dừng thủ công.
@@ -323,7 +323,7 @@ Ví dụ:
 docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' my_container
 ```
 
-Kết quả có thể là `no`, `always`, `unless-stopped`, hoặc `on-failure` tùy thuộc vào chính sách restart của container đó.  
+Kết quả có thể là `no`, `always`, `unless-stopped`, hoặc `on-failure` tùy thuộc vào chính sách restart của container đó.
   
   
 **Reference**  
