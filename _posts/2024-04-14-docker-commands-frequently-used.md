@@ -16,7 +16,8 @@ This is a collection of docker commands that I have ever been. And I still keep 
 # Init Docker
 
 Install docker using the convenience script
-```Shell
+
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh --dry-run
 ```
@@ -25,20 +26,20 @@ sudo sh ./get-docker.sh --dry-run
 
 Start a new container
 
-```Shell
+```bash
 docker run IMAGE
 ```
 
 Map a port
 
-```Shell
+```bash
 docker run -p HOST_PORT:CONTAINER_PORT IMAGE
 ```
 > Ex: `docker run -p 8080:80 nginx`
 
 Map all port
 
-```Shell
+```bash
 docker run -P IMAGE
 ```
 
@@ -46,43 +47,43 @@ docker run -P IMAGE
 
 A list of running containers
 
-```Shell
+```bash
 docker ps
 ```
 
 A list of all containers
 
-```Shell
+```bash
 docker ps -a
 ```
 
 Remove a container
 
-```Shell
+```bash
 docker rm CONTAINER
 ```
 
 Remove a running container
 
-```Shell
+```bash
 docker rm -f CONTAINER
 ```
 
 Delete stopped containers
 
-```Shell
+```bash
 docker container prune
 ```
 
 Stop a running container
 
-```Shell
+```bash
 docker stop CONTAINER
 ```
 
 Start a stopped container
 
-```Shell
+```bash
 docker start CONTAINER
 ```
 
@@ -90,25 +91,25 @@ docker start CONTAINER
 
 Download an image from a Docker registry
 
-```Shell
+```bash
 docker pull IMAGE
 ```
 
 Delete an image
 
-```Shell
+```bash
 docker rmi IMAGE
 ```
 
 Lists all docker images available on the system.
 
-```Shell
+```bash
 docker images
 ```
 
 Build & tag an image from a Dockerfile
 
-```Shell
+```bash
 docker build -t IMAGE DIRECTORY
 ```
 
@@ -116,7 +117,7 @@ docker build -t IMAGE DIRECTORY
 
 Lists all Docker networks
 
-```Shell
+```bash
 docker network list
 ```
 
@@ -128,7 +129,7 @@ docker network create reverseproxy-nw
 
 Remove a docker network
 
-```Shell
+```bash
 docker network rm reverseproxy-nw
 ```
 
@@ -136,7 +137,7 @@ docker network rm reverseproxy-nw
 
 Show installed docker version
 
-```Shell
+```bash
 docker version
 ```
 
@@ -148,13 +149,13 @@ docker stats
 
 Show the logs of a container
 
-```Shell
+```bash
 docker logs CONTAINER
 ```
 
 Show cấu hình của container ở low-level (JSON format)
 
-```Shell
+```bash
 docker inspect CONTAINER
 ```
 
@@ -168,12 +169,12 @@ docker top CONTAINER
 
 - Start containers which are defined in docker-compose.yml
 
-```Shell
+```bash
 docker-compose up -d
 ```
 > Detached mode: Run containers in the background, print new container names
 
-```Shell
+```bash
 docker-compose up --build
 ```
 > Rebuild the images for the services in the `docker-compose.yml` file before starting the containers
@@ -202,19 +203,19 @@ docker-compose logs <name-of-service>
 > -t, --timestamps Show timestamps.
 > --tail="all" Number of lines to show from the end of the logs for each container.
 
-```Shell
+```bash
 docker-compose logs -f -t >> myDockerCompose.log
 ```
 > To save the output to a file
 
-```Shell
+```bash
 docker-compose logs -t -f --tail <no of lines>
 ```
 > see output logs from all the services in your terminal
 
 Ex: show logs của tất cả service docker, chỉ 5 dòng cuối
 
-```Shell
+```bash
 docker-compose logs -t -f --tail 5
 ```
 
