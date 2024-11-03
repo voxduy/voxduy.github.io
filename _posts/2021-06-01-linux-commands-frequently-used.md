@@ -1,5 +1,6 @@
 ---
 title: Linux Commands - Frequently Used
+description: This is a collection of linux commands that I have ever been. And I still keep it up-to-date currently.
 author: voxduy
 date: 2021-06-01 02:00:00 +0700
 categories: [Linux]
@@ -10,8 +11,6 @@ image:
   height: 500
 pin: true
 ---
-
-This is a collection of linux commands that I have ever been. And I still keep it up-to-date currently.
 
 1. `man <cmd>` >>> khi cần gợi ý cú pháp trên linux
 
@@ -58,13 +57,15 @@ This is a collection of linux commands that I have ever been. And I still keep i
 22. `top` >>> Hiển thị danh sách các tiến trình đang chạy
 
 23. copy toàn bộ thư mục
+
 ```bash
 scp -r admin@69.69.69.69:/home/admin/<folder_name> /home/duyvn/
 ```
 
-1.  Add user & grant quyền sudo cho user
+24.   Add user & grant quyền sudo cho user
 
-`useradd -m -d /home/duyvn -s /bin/bash -G sudo duyvn`
+```bash
+useradd -m -d /home/duyvn -s /bin/bash -G sudo duyvn
 > tạo một người dùng mới có tên duyvn, với thư mục home tại /home/duyvn, sử dụng shell bash, và có quyền quản trị (là thành viên của nhóm sudo)
 
 `passwd duyvn`
@@ -73,38 +74,56 @@ scp -r admin@69.69.69.69:/home/admin/<folder_name> /home/duyvn/
 `visudo`
 > edit file
 
-`duyvn  ALL=(ALL:ALL) ALL`
+duyvn  ALL=(ALL:ALL) ALL
 > cho phép người dùng duyvn chạy mọi lệnh với quyền root hoặc quyền của bất kỳ người dùng nào khác trên hệ thống
 
-`usermod -aG sudo duyvn`  
+usermod -aG sudo duyvn
 > (thêm người dùng `duyvn` vào nhóm `sudo`, đồng thời giữ nguyên tất cả các nhóm mà người dùng này đã thuộc về trước đó. Sau khi thực hiện lệnh này, `duyvn` sẽ có quyền thực hiện các lệnh với quyền của người dùng root thông qua lệnh `sudo`)
+```
 
-25. `sudo find / -name \*docker*`
+25.  Tìm kiếm trên hệ thống có tên chứa chuỗi ký tự "docker" ở bất kỳ đâu trong tên tệp hoặc thư mục
 
-26. `sudo systemctl status|restart systemd-resolved.service` <<< Check status or restart DNS
+```bash
+sudo find / -name \*docker*
+```
 
-27. Tạo file với dung lượng bất kì
+26. Check status or restart DNS
+
+```bash
+sudo systemctl status|restart systemd-resolved.service
+```
+
+26. Tạo file với dung lượng bất kì
+
 ```bash
 truncate -s 20G file
 ls -lh file
 ```
 > Specifically, we use the -s argument to represent the size of the file in bytes.
 
-28.   `df -ah` <<< check disk free
+27.  Check disk
 
-29.  `fdisk -l` <<< liệt kê toàn bộ thông tin về các ổ đĩa và các phân vùng của chúng trên hệ thống
+```bash
+df -ah
 
-30.  `du -sch /DATA/*` <<< hiển thị tổng dung lượng của tất cả các thư mục hoặc tệp tin trong một thư mục cụ thể
+fdisk -l
+> liệt kê toàn bộ thông tin về các ổ đĩa và các phân vùng của chúng trên hệ thống
 
-31.  `cat /etc/fstab` <<< xem các thiết bị và phân vùng sẽ được tự động gắn kết khi hệ thống khởi động
+du -sch /DATA/*
+> hiển thị tổng dung lượng của tất cả các thư mục hoặc tệp tin trong một thư mục cụ thể
 
-32.  Tool for monitoring health server Ubuntu or RHEL
+cat /etc/fstab
+> xem các thiết bị và phân vùng sẽ được tự động gắn kết khi hệ thống khởi động
+```
+
+28. Tool for monitoring health server Ubuntu or RHEL
+
 ```bash
 apt-get install nmon
 dnf install nmon
 ```
 
-33.  compress and extract
+29. compress and extract
 
 ```bash
 tar -czvf myproject.tar.gz /path/to/your/myproject
