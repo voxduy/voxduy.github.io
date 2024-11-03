@@ -105,6 +105,7 @@ ls -lh file
 
 ```bash
 df -ah
+> hiển thị thông tin về dung lượng đĩa của tất cả các hệ thống theo định dạng human-readable
 
 fdisk -l
 > liệt kê toàn bộ thông tin về các ổ đĩa và các phân vùng của chúng trên hệ thống
