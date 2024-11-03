@@ -8,7 +8,7 @@ order: 4
 
 ---
 
-> Hi there! It's a pleasure to see you here. Let some any words if you visited this site ^^
+> Hi there! It's a pleasure to see you here. Please leave some words if you visited this site ^^
 {: .prompt-info }
 
 Some of words for introduction myself:
