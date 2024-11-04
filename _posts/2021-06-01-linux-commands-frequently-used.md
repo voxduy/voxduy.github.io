@@ -62,7 +62,7 @@ copy toàn bộ thư mục
 scp -r admin@69.69.69.69:/home/admin/<folder_name> /home/duyvn/
 ```
 
-1.    Add user & grant quyền sudo cho user
+Add user & grant quyền sudo cho user
 
 ```bash
 useradd -m -d /home/duyvn -s /bin/bash -G sudo duyvn
