@@ -1,5 +1,5 @@
 ---
-title: Giải thích về cơ chế tấn công DDoS - SSDP Amplification
+title: Hiểu hơn về tấn công DDoS - SSDP Amplification
 author: voxduy
 date: 2021-04-30 15:00:00 +0700
 categories: [Network, DDoS]
