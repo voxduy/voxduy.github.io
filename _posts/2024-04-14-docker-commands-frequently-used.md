@@ -305,7 +305,7 @@ Nếu bạn muốn dừng tất cả các container trước khi nâng cấp và
 Sử dụng command sau để kiểm tra xem một container Docker có được cấu hình để tự động khởi động lại sau khi restart server hay không:
 
 ```bash
-docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' <CONTAINER_OR_ID>
+'docker inspect -f "{{ .HostConfig.RestartPolicy.Name }}" <CONTAINER_OR_ID>'
 ```
 
 Trong đó:
@@ -320,8 +320,10 @@ Trong đó:
 Ví dụ:
 
 ```bash
-docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' my_container
+'docker inspect -f "{{ .HostConfig.RestartPolicy.Name }}" my_container'
 ```
+
+Updating...
 
 **Reference**  
 [The Ultimate Docker Cheat Sheet | dockerlabs (collabnix.com)](https://dockerlabs.collabnix.com/docker/cheatsheet/)

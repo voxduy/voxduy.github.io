@@ -12,49 +12,53 @@ image:
 pin: true
 ---
 
-`man <cmd>` >>> khi cần gợi ý cú pháp trên linux
+## File and Directory Management
 
-`clear` >>> làm sạch cửa sổ dòng lệnh
+## Process Management
 
-`ls -lah` >>> tenthumuc: Liệt kê nội dung bên trong một thư mục
+`man <cmd>` /// khi cần gợi ý cú pháp trên linux
 
-`cat` >>> tentaptin: Hiển thị nội dung của một tập tin lên cửa sổ dòng lệnh
+`clear` /// làm sạch cửa sổ dòng lệnh
 
-`rm` >>> tentaptin: Xóa một tập tin
+`ls -lah` /// tenthumuc: Liệt kê nội dung bên trong một thư mục
 
-`cp` >>> taptinnguon taptindich: Sao chép một tập tin
+`cat` /// tentaptin: Hiển thị nội dung của một tập tin lên cửa sổ dòng lệnh
 
-`passwd` >>> Đổi mật khẩu
+`rm` /// tentaptin: Xóa một tập tin
 
-`less tentaptin` hoặc `more tentaptin` >>> Hiển thị nội dung một tập tin trong cửa sổ dòng lệnh một trang mỗi lần
+`cp` /// taptinnguon taptindich: Sao chép một tập tin
 
-`grep chuoi tentaptin` >>> Tìm kiếm chuỗi trong tập tin
+`passwd` /// Đổi mật khẩu
 
-`head tentaptin` >>> Hiển thị 10 dòng đầu tiên của tập tin
+`less tentaptin` hoặc `more tentaptin` /// Hiển thị nội dung một tập tin trong cửa sổ dòng lệnh một trang mỗi lần
 
-`tail tentaptin` >>> Hiển thị 10 dòng cuối cùng của tập tin
+`grep chuoi tentaptin` /// Tìm kiếm chuỗi trong tập tin
 
-`mv tentaptincu tentaptinmoi` >>> Di chuyển hoặc đổi tên tập tin
+`head tentaptin` /// Hiển thị 10 dòng đầu tiên của tập tin
 
-`file tentaptin` >>> Hiển thị thông tin về nội dung của tập tin
+`tail tentaptin` /// Hiển thị 10 dòng cuối cùng của tập tin
 
-`echo chuoi` >>> Sao chép chuỗi tới màn hình dòng lệnh
+`mv tentaptincu tentaptinmoi` /// Di chuyển hoặc đổi tên tập tin
 
-`date` >>> Hiển thị ngày và giờ hiện tại
+`file tentaptin` /// Hiển thị thông tin về nội dung của tập tin
 
-`gzip tentaptin` >>> Nén một tập tin
+`echo chuoi` /// Sao chép chuỗi tới màn hình dòng lệnh
 
-`gunzip tentaptin` >>> Giải nén một tập tin
+`date` /// Hiển thị ngày và giờ hiện tại
 
-`chmod quyen tentaptin` >>> Thay đổi quyền truy cập tập tin
+`gzip tentaptin` /// Nén một tập tin
 
-`mkdir tenthumuc` >>> Tạo một thư mục
+`gunzip tentaptin` /// Giải nén một tập tin
 
-`rmdir tenthumuc` >>> Xóa một thư mục rỗng
+`chmod quyen tentaptin` /// Thay đổi quyền truy cập tập tin
 
-`ln existingfile new-link` >>> Tạo một đường dẫn tới một tập tin (liên kết cứng)
+`mkdir tenthumuc` /// Tạo một thư mục
 
-`top` >>> Hiển thị danh sách các tiến trình đang chạy
+`rmdir tenthumuc` /// Xóa một thư mục rỗng
+
+`ln existingfile new-link` /// Tạo một đường dẫn tới một tập tin (liên kết cứng)
+
+`top` /// Hiển thị danh sách các tiến trình đang chạy
 
 copy toàn bộ thư mục
 
@@ -131,5 +135,7 @@ tar -czvf myproject.tar.gz /path/to/your/myproject
 
 tar -xzvf myproject.tar.gz -C /path/to/destination
 ```
+
+Updating...
 
 Measure!
