@@ -68,7 +68,7 @@ Như đã nói ở step 1, cần phải biết địa chỉ IP của đối tư�
 Thực hiện gửi nhiều yêu cầu **M-SEARCH** thông qua giao thức **UDP** đến các thiết bị đã tìm thấy. Yêu cầu này được thiết kế để kích hoạt phản hồi từ các thiết bị SSDP. Tin nhắn M-SEARCH yêu cầu các thiết bị gửi lại thông tin mô tả dịch vụ UPnP mà chúng hỗ trợ.
 
 M-SEARCH Request:
-```
+```text
 M-SEARCH * HTTP/1.1
 HOST: 239.255.255.250:1900
 MAN: "ssdp:discover"
@@ -87,7 +87,7 @@ Khi gửi yêu cầu này đến các thiết bị SSDP, địa chỉ IP nguồn
 Khi nhận được yêu cầu M-SEARCH, các thiết bị SSDP sẽ phản hồi lại bằng tin nhắn **HTTP 200 OK** chứa thông tin mô tả về dịch vụ. Phản hồi này thường lớn hơn yêu cầu ban đầu nhiều lần, từ 30 đến 40 lần, tạo ra hiệu ứng **khuếch đại lưu lượng**.
 
 SSDP response:
-```
+```text
 HTTP/1.1 200 OK
 CACHE-CONTROL: max-age=1800
 EXT:
