@@ -145,7 +145,7 @@ usermod -aG sudo duyvn
 
 ## System Monitoring and Information
 
-Tool for monitoring health server Ubuntu or RHEL
+- **Tool for monitoring health server Ubuntu or RHEL**
 
 ```bash
 apt-get install nmon
