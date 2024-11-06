@@ -120,9 +120,9 @@ Lists all Docker networks
 docker network list
 ```
 
- Create a new docker network
+Create a new docker network
 
-```
+```bash
 docker network create reverseproxy-nw
 ```
 
@@ -160,7 +160,7 @@ docker inspect CONTAINER
 
 Show processes of container
 
-```
+```bash
 docker top CONTAINER
 ```
 
@@ -178,14 +178,13 @@ docker-compose up --build
 ```
 > Rebuild the images for the services in the `docker-compose.yml` file before starting the containers
 
-
 - Stop containers which are defined in docker-compose.yml
 
-```
+```bash
 docker-compose down
 ```
 
-```
+```bash
 docker-compose down -v
 ```
 > Stops and removes containers, networks, and volumes
@@ -233,10 +232,9 @@ docker-compose logs -t -f --tail 5 portal api
 
 1. **ERROR >>>  'ContainerConfig'**
 
-```
-docker compose up -d --force-recreate
-```
-
+    ```bash
+    docker compose up -d --force-recreate
+    ```
 
 2. **Upgrade hoặc restart một server có docker container**
 
@@ -309,9 +307,11 @@ Sử dụng command sau để kiểm tra xem một container Docker có được
 ```
 
 Trong đó:
+
 - `<CONTAINER_OR_ID>` là tên hoặc ID của container mà bạn muốn kiểm tra.
 
 > Restart Policy:
+>
 > - **no**: Container sẽ không tự động khởi động lại.
 > - **always**: Container sẽ tự động khởi động lại bất cứ khi nào nó dừng lại hoặc khi hệ thống khởi động lại.
 > - **unless-stopped**: Container sẽ tự động khởi động lại trừ khi nó được dừng thủ công.
