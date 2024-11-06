@@ -323,8 +323,5 @@ Ví dụ:
 docker inspect -f '{{ .HostConfig.RestartPolicy.Name }}' my_container
 ```
 
-Kết quả có thể là `no`, `always`, `unless-stopped`, hoặc `on-failure` tùy thuộc vào chính sách restart của container đó.
-  
-  
 **Reference**  
 [The Ultimate Docker Cheat Sheet | dockerlabs (collabnix.com)](https://dockerlabs.collabnix.com/docker/cheatsheet/)
