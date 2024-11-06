@@ -14,7 +14,23 @@ pin: true
 
 ## File and Directory Management
 
+- **Tạo file với dung lượng bất kì**
+
+```bash
+truncate -s 20G file
+ls -lh file
+```
+> Specifically, we use the -s argument to represent the size of the file in bytes.
+
+- **Tìm kiếm trên hệ thống có tên chứa chuỗi ký tự "docker" ở bất kỳ đâu trong tên tệp hoặc thư mục**
+
+```bash
+'sudo find / -name \*docker*'
+```
+
 ## Process Management
+
+## Networking
 
 `man <cmd>` /// khi cần gợi ý cú pháp trên linux
 
@@ -58,6 +74,8 @@ pin: true
 
 `ln existingfile new-link` /// Tạo một đường dẫn tới một tập tin (liên kết cứng)
 
+## System Information
+
 `top` /// Hiển thị danh sách các tiến trình đang chạy
 
 copy toàn bộ thư mục
@@ -65,6 +83,40 @@ copy toàn bộ thư mục
 ```bash
 scp -r admin@69.69.69.69:/home/admin/<folder_name> /home/duyvn/
 ```
+
+Check status or restart DNS
+
+```bash
+sudo systemctl status|restart systemd-resolved.service
+```
+
+Check disk
+
+```bash
+df -ah
+> hiển thị thông tin về dung lượng đĩa của tất cả các hệ thống theo định dạng human-readable
+
+fdisk -l
+> liệt kê toàn bộ thông tin về các ổ đĩa và các phân vùng của chúng trên hệ thống
+
+du -sch /DATA/*
+> hiển thị tổng dung lượng của tất cả các thư mục hoặc tệp tin trong một thư mục cụ thể
+
+cat /etc/fstab
+> xem các thiết bị và phân vùng sẽ được tự động gắn kết khi hệ thống khởi động
+```
+
+## Compression and Archiving
+
+compress and extract
+
+```bash
+tar -czvf myproject.tar.gz /path/to/your/myproject
+
+tar -xzvf myproject.tar.gz -C /path/to/destination
+```
+
+## User Management
 
 Add user & grant quyền sudo cho user
 
@@ -85,41 +137,13 @@ usermod -aG sudo duyvn
 > thêm người dùng `duyvn` vào nhóm `sudo`, đồng thời giữ nguyên tất cả các nhóm mà người dùng này đã thuộc về trước đó. Sau khi thực hiện lệnh này, `duyvn` sẽ có quyền thực hiện các lệnh với quyền của người dùng root thông qua lệnh `sudo`
 ```
 
-Tìm kiếm trên hệ thống có tên chứa chuỗi ký tự "docker" ở bất kỳ đâu trong tên tệp hoặc thư mục
+## Data Manipulation
 
-```bash
-sudo find / -name \*docker*
-```
+## Text Processing
 
-Check status or restart DNS
+## Scheduling and Automation
 
-```bash
-sudo systemctl status|restart systemd-resolved.service
-```
-
-Tạo file với dung lượng bất kì
-
-```bash
-truncate -s 20G file
-ls -lh file
-```
-> Specifically, we use the -s argument to represent the size of the file in bytes.
-
-Check disk
-
-```bash
-df -ah
-> hiển thị thông tin về dung lượng đĩa của tất cả các hệ thống theo định dạng human-readable
-
-fdisk -l
-> liệt kê toàn bộ thông tin về các ổ đĩa và các phân vùng của chúng trên hệ thống
-
-du -sch /DATA/*
-> hiển thị tổng dung lượng của tất cả các thư mục hoặc tệp tin trong một thư mục cụ thể
-
-cat /etc/fstab
-> xem các thiết bị và phân vùng sẽ được tự động gắn kết khi hệ thống khởi động
-```
+## System Monitoring and Information
 
 Tool for monitoring health server Ubuntu or RHEL
 
@@ -128,13 +152,7 @@ apt-get install nmon
 dnf install nmon
 ```
 
-compress and extract
-
-```bash
-tar -czvf myproject.tar.gz /path/to/your/myproject
-
-tar -xzvf myproject.tar.gz -C /path/to/destination
-```
+## Security and Access Control
 
 Updating...
 
