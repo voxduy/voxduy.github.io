@@ -1,7 +1,7 @@
 ---
 title: SSL/TLS VPN and IPsec VPN
 author: voxduy
-date: 2024-02-18 17:45:00 +0700
+date: 2025-02-18 17:45:00 +0700
 categories: [Security]
 tags: [security]
 image:
