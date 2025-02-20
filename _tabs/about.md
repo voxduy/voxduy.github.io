@@ -14,7 +14,7 @@ order: 4
 Some of words for introduction myself:
 + **LEARNING** - Kubernetes
 + **RESEARCHING** - eBPF for DDoS Protection
-+ And I fucking love Raspberry Pi.
++ Fucking love Raspberry Pi, Home Lab, DIY.
 
 Full Name - Vo Nhat Duy  
 Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps  
@@ -47,6 +47,6 @@ I've worked on various networking phases such as planning, design, implementatio
 + Docker
 + VMWare ESXi
 
-**My Personal Website** - https://bytebytedance.io.vn  
-**Github** - https://github.com/voxduy  
+**My Personal Website** - https://bytebytedance.io.vn
+**Github** - https://github.com/voxduy
 ^^
