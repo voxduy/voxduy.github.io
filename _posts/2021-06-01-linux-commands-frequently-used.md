@@ -4,7 +4,7 @@ description: This is a collection of linux commands that I have ever been. And I
 author: voxduy
 date: 2021-06-01 02:00:00 +0700
 categories: [Linux]
-tags: [linux]
+tags: [Linux]
 image:
   path: /posts/2021-06-01-linux-commands-frequently-used/linux.png
   width: 800

@@ -3,7 +3,7 @@ title: SSL/TLS VPN and IPsec VPN
 author: voxduy
 date: 2025-02-18 17:45:00 +0700
 categories: [Security]
-tags: [security]
+tags: [Security]
 image:
   path: /posts/2025-02-18-ssl-tls-vs-ipsec-vpn/ssl-vpn-vs-ipsec-vpn.png
   width: 800

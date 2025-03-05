@@ -12,41 +12,48 @@ order: 4
 {: .prompt-info }
 
 Some of words for introduction myself:
+
 + **LEARNING** - Kubernetes
 + **RESEARCHING** - eBPF for DDoS Protection
-+ Fucking love Raspberry Pi, Home Lab, DIY.
++ Niềm đam mê to lớn với Raspberry Pi, Home Lab, DIY.
 
-Full Name - Vo Nhat Duy  
-Senior Network Engineer at VNG Cloud - JNCIP-SEC _ JNCIS-SP _ JNCIA-DevOps  
-Email - nhatduy.inet.s3c@gmail.com
+Vo Nhat Duy
+Senior Network Engineer at VNG Cloud
+Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps
+📧 Email: <nhatduy.inet.s3c@gmail.com>
 
-I've worked on various networking phases such as planning, design, implementation, troubleshooting, supporting, verifying and testing... also worked with network vendors: Juniper (the most working time), Cisco, Dell, HP, Fortinet, H3C, Huawei, Aruba,… Besides, I'm an main person for implementation, maintenance & operation DDoS Protection System.
+## About Me
 
-**Networking Skills**
-+ Good understanding in Network DataCenter (including Legacy DataCenter & Virtual DataCenter), Enterprise. And a little bit of knowledge about ISP structure network.
-+ Theory of VPN Services: VPN layer 2, VPN layer 3, VPLS, VPN Site to Site, IPSEC, SSL VPN
-+ LAN/WAN Enviroment
-+ Layer 3 IP Routing: good understanding IGPs (OSPF, EIGRP, RIP) and BGP Protocol.
-+ Layer 2 Switching and VLANs: VLANs, Trunking/Tagging, Private VLAN, Spanning Tree Protocol 802.1D, Rapid Spanning Tree, LACP, SPAN and RSPAN / mirror traffic using wireshark.
-+ High Availability (including Cisco & Juniper): Multi-Chassis Link Aggregation Group (MC-LAG), HSRP, VRRP, IP SLA, Redundant Trunk Group, Link Aggregation Group, Virtual Chassis Bidirectional Fowarding Detection,... and Chassis Clustering (Juniper SRX High End)
-+ Good understanding JunOS Security, Firewall SRX
-+ Layer 2 Security
-+ Network Management
-+ IPv6 Planning
-+ Network Core Banking Management
-+ Deep dive with Arbor Network, as well as DDoS Protection Mechanisms
+I am a Senior Network Engineer with extensive experience across multiple networking domains, including planning, design, implementation, troubleshooting, support, verification, and testing.
 
-**System Skills**
-+ Linux Administrator & Hardening
-+ Knowledge about Python Programing
-+ Web Basic Developer include FrontEnd HTML5-CSS3-JQUERRY-BOOTSTRAP and BackEnd with Django Framework.
-+ Git Skills
-+ Web Server _ Proxy (NGINX)
-+ Monitoring System (Cacti, Nagios, Zabbix,..)
-+ ELK
-+ Docker
-+ VMWare ESXi
+I have worked extensively with network vendors such as Juniper (primarily), Cisco, Dell, HP, Fortinet, H3C, Huawei, and Aruba. Additionally, I play a key role in the implementation, maintenance, and operation of the DDoS Protection System.
 
-**My Personal Website** - https://bytebytedance.io.vn
-**Github** - https://github.com/voxduy
+## Networking Skills
+
++ Data Center Networking: Strong knowledge of Legacy Data Centers & Virtual Data Centers, as well as Enterprise Networking. Basic understanding of ISP network structures.
++ VPN Services: Experience with Layer 2 & Layer 3 VPNs, VPLS, Site-to-Site VPN, IPsec, SSL VPN.
++ LAN/WAN Environments: Expertise in network architecture and connectivity solutions.
++ Layer 3 IP Routing: In-depth understanding of IGP protocols (OSPF, EIGRP, RIP) and BGP.
++ Layer 2 Switching & VLANs: Proficient in VLANs, Trunking/Tagging, Private VLAN, Spanning Tree Protocol (STP, RSTP), LACP, SPAN/RSPAN, and traffic mirroring using Wireshark.
++ High Availability (Cisco & Juniper): Experience with MC-LAG, HSRP, VRRP, IP SLA, Redundant Trunk Group, LAG, Virtual Chassis, BFD, and Juniper SRX Chassis Clustering.
++ Network Security: Strong expertise in JunOS Security & Juniper SRX Firewalls.
++ Layer 2 Security & Network Management.
++ IPv6 Planning & Deployment.
++ Network Core Banking Management.
++ DDoS Protection: Deep expertise in Arbor Networks and DDoS mitigation techniques.
+
+## System Skills
+
++ Linux Administration & Security Hardening.
++ Python Programming.
++ Basic Web Development: Frontend (HTML5, CSS3, jQuery, Bootstrap) and Backend (Django Framework).
++ Git Version Control.
++ Web Server & Proxy Management (NGINX).
++ Monitoring Systems (Cacti, Nagios, Zabbix, etc.).
++ ELK Stack for Logging & Analytics.
++ Docker & Containerization.
++ VMware ESXi Virtualization.
+
+🌍 **Personal Website**: <https://bytebytedance.io.vn>
+🐙 **GitHub**: <https://github.com/voxduy>
 ^^
