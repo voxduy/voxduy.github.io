@@ -17,9 +17,9 @@ Some of words for introduction myself:
 + **RESEARCHING** - eBPF for DDoS Protection
 + Niềm đam mê to lớn với Raspberry Pi, Home Lab, DIY.
 
-Vo Nhat Duy
-Senior Network Engineer at VNG Cloud
-Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps
+Vo Nhat Duy  
+Senior Network Engineer at VNG Cloud  
+Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps  
 📧 Email: <nhatduy.inet.s3c@gmail.com>
 
 ## About Me
@@ -54,6 +54,6 @@ I have worked extensively with network vendors such as Juniper (primarily), Cisc
 + Docker & Containerization.
 + VMware ESXi Virtualization.
 
-🌍 **Personal Website**: <https://bytebytedance.io.vn>
-🐙 **GitHub**: <https://github.com/voxduy>
+🌍 **Personal Website**: <https://bytebytedance.io.vn>  
+🐙 **GitHub**: <https://github.com/voxduy>  
 ^^
