@@ -14,7 +14,7 @@ order: 4
 Some of words to introduce myself:
 
 + LEARNING - Kubernetes
-+ RESEARCHING - eBPF for DDoS Protection
++ RESEARCHING - eBPF for DDoS Protection | Containerlab - Lab as a Code
 + Huge passion for Raspberry Pi, Home Lab, DIY.
 
 **Vo Nhat Duy**  
