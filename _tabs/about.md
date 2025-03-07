@@ -11,13 +11,13 @@ order: 4
 > Hi there! It's a pleasure to see you here. Please leave some words if you visited this site ^^
 {: .prompt-info }
 
-Some of words for introduction myself:
+Some of words to introduce myself:
 
-+ **LEARNING** - Kubernetes
-+ **RESEARCHING** - eBPF for DDoS Protection
-+ Niềm đam mê to lớn với Raspberry Pi, Home Lab, DIY.
++ LEARNING - Kubernetes
++ RESEARCHING - eBPF for DDoS Protection
++ Huge passion for Raspberry Pi, Home Lab, DIY.
 
-Vo Nhat Duy  
+**Vo Nhat Duy**  
 Senior Network Engineer at VNG Cloud  
 Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps  
 📧 Email: <nhatduy.inet.s3c@gmail.com>
