@@ -6,9 +6,9 @@ date: 2025-02-14 22:00:00 +0700
 categories: [Network, Containerlab]
 tags: [Network, Containerlab]
 image:
-  path: /posts/22025-02-14-experience-with-containerlab/containerlab.png
+  path: /posts/2025-02-14-experience-with-containerlab/containerlab.png
   width: 800
   height: 500
-pin: true
+pin: false
 ---
 
