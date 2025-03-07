@@ -7,8 +7,8 @@ categories: [Network, Containerlab]
 tags: [Network, Containerlab]
 image:
   path: /posts/2025-02-14-experience-with-containerlab/containerlab.png
-  width: 800
-  height: 500
+  width: 470
+  height: 236
 pin: false
 ---
 
