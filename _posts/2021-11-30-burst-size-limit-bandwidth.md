@@ -10,6 +10,7 @@ image:
   width: 800
   height: 500
 pin: false
+math: true
 ---
 
 **Burst-size-limit** trong **QoS (Quality of Service)** hoặc limit bandwidth là một tham số quan trọng xác định lượng dữ liệu tối đa mà một luồng có thể truyền vượt quá tốc độ giới hạn bình thường trong một khoảng thời gian ngắn.
@@ -28,8 +29,8 @@ pin: false
 - Nếu lượng dữ liệu vượt quá cả **burst-size-limit**, các gói tin sẽ bị drop hoặc bị xếp hàng chờ.
 
     **Ví dụ**  
-    Giả sử một chính sách QoS giới hạn băng thông ở **10 Mbps** nhưng cho phép burst **1 MB**. Điều này có nghĩa:
-      - Dữ liệu có thể truyền ở tốc độ **hơn 10 Mbps** trong một khoảng thời gian ngắn miễn là không vượt quá **1 MB**.
+    Giả sử một chính sách QoS giới hạn băng thông ở **10 Mbps** nhưng cho phép burst **1 MB**. Điều này có nghĩa:  
+      - Dữ liệu có thể truyền ở tốc độ **hơn 10 Mbps** trong một khoảng thời gian ngắn miễn là không vượt quá **1 MB**.  
       - Nếu lượng dữ liệu cần truyền vượt quá 1 MB, tốc độ sẽ bị giới hạn trở lại 10 Mbps hoặc gói tin bị drop.
 
 ### **Ứng dụng thực tế**
@@ -55,17 +56,17 @@ Nếu không có Burst-size-limit sẽ làm cho việc kiểm soát băng thông
     - Điều này có thể gây ra hiện tượng **packet loss** nghiêm trọng khi có các đợt lưu lượng đột biến hợp lệ.
 
     **Ví dụ**:  
-        - Giới hạn **50 Mbps** trên một link mạng.  
-        - Một ứng dụng cần gửi **55 Mbps** trong một khoảnh khắc ngắn.  
-        - Nếu không có Burst-size-limit, **5 Mbps vượt quá** sẽ bị drop ngay lập tức thay vì được tạm thời chấp nhận.
+    - Giới hạn **50 Mbps** trên một link mạng.  
+    - Một ứng dụng cần gửi **55 Mbps** trong một khoảnh khắc ngắn.  
+    - Nếu không có Burst-size-limit, **5 Mbps vượt quá** sẽ bị drop ngay lập tức thay vì được tạm thời chấp nhận.
 
 2. Hiệu suất kém đối với các ứng dụng có lưu lượng biến động
     - Các ứng dụng truyền dữ liệu theo từng đợt (bursty traffic) như **web browsing, video streaming, VoIP, gaming** sẽ gặp vấn đề.
     - Không có burst nghĩa là dữ liệu chỉ có thể truyền đi **nếu ngay lập tức tuân thủ giới hạn**, gây ra độ trễ cao hơn hoặc mất kết nối.
 
     **Ví dụ**:  
-        - Khi tải một trang web, trình duyệt có thể yêu cầu nhiều tài nguyên đồng thời, tạo ra một burst tạm thời.  
-        - Không có burst-size-limit, nhiều gói tin có thể bị drop, làm trang web tải chậm hơn.
+    - Khi tải một trang web, trình duyệt có thể yêu cầu nhiều tài nguyên đồng thời, tạo ra một burst tạm thời.  
+    - Không có burst-size-limit, nhiều gói tin có thể bị drop, làm trang web tải chậm hơn.
 
 3. Tăng chi phí xử lý do quá nhiều gói tin bị drop
     - Khi các gói tin bị drop, **TCP sẽ kích hoạt cơ chế điều chỉnh lại tốc độ** (TCP Congestion Control).  
@@ -77,7 +78,7 @@ Nếu không có Burst-size-limit sẽ làm cho việc kiểm soát băng thông
     - Nếu không có burst, có thể xảy ra tình huống băng thông bị "cắt vụn" (fragmentation), làm giảm hiệu suất tổng thể.
 
     **Ví dụ**:  
-        - Một luồng dữ liệu có thể tạm thời dùng 55 Mbps trong 1 ms, nhưng do bị drop ngay lập tức, nó chỉ có thể dùng đúng 50 Mbps cố định, dẫn đến việc lãng phí tài nguyên.
+    - Một luồng dữ liệu có thể tạm thời dùng 55 Mbps trong 1 ms, nhưng do bị drop ngay lập tức, nó chỉ có thể dùng đúng 50 Mbps cố định, dẫn đến việc lãng phí tài nguyên.
 
 ### Ví dụ về cách tính burst-size-limit trên Router Juniper
 
