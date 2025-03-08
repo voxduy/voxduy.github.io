@@ -11,11 +11,11 @@ order: 4
 > Hi there! It's a pleasure to see you here. Please leave some words if you visited this site ^^
 {: .prompt-info }
 
-Some of words to introduce myself:
-
 + LEARNING - Kubernetes
-+ RESEARCHING - eBPF for DDoS Protection, Containerlab - Lab as a Code
++ RESEARCHING - eBPF for DDoS Protection, Containerlab - Lab as a code
 + Huge passion for Raspberry Pi, Home Lab, DIY.
+
+Some of words to introduce myself:
 
 **Vo Nhat Duy**  
 Senior Network Engineer at VNG Cloud  

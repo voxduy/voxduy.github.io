@@ -1,5 +1,5 @@
 ---
-title: Trải nghiệm Containerlab - Lab as a Code
+title: Trải nghiệm Containerlab - Lab as a code
 description: Networking Labs - Old & New
 author: voxduy
 date: 2025-02-14 22:00:00 +0700
@@ -7,8 +7,8 @@ categories: [Network, Containerlab]
 tags: [Network, Containerlab]
 image:
   path: /posts/2025-02-14-experience-with-containerlab/containerlab.png
-  width: 470
-  height: 236
+  width: 800
+  height: 500
 pin: false
 ---
 
