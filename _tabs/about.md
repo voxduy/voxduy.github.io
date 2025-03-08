@@ -24,7 +24,7 @@ Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps
 
 ## About Me
 
-I am a Senior Network Engineer with extensive experience across multiple networking domains, including planning, design, implementation, troubleshooting, support, verification, and testing.
+I'm a Senior Network Engineer with extensive experience across multiple networking domains, including planning, design, implementation, troubleshooting, support, verification, and testing.
 
 I have worked extensively with network vendors such as Juniper (primarily), Cisco, Dell, HP, Fortinet, H3C, Huawei, and Aruba. Additionally, I play a key role in the implementation, maintenance, and operation of the DDoS Protection System.
 
