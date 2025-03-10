@@ -86,24 +86,24 @@ Khi thực hiện giới hạn băng thông trên router Juniper, Có thể tín
 
 Công thức tính:
 
-\[
+$$
+\begin{equation}
 \text{Burst Size} = \text{Rate Limit} \times \text{Allowed Burst Time}
-\]
+\end{equation}
+$$
 
-Trong đó:
+Trong đó:  
     - **Burst Size (bytes)**: Lượng dữ liệu tối đa có thể truyền vượt quá rate limit trong một khoảng thời gian ngắn.  
     - **Rate Limit (bps)**: Giới hạn băng thông mong muốn (ở đây là 50 Mbps).  
     - **Allowed Burst Time (giây)**: Thời gian cho phép vượt quá tốc độ giới hạn trước khi hệ thống can thiệp.
 
 **Giả sử**: cho phép burst trong **1ms (0.001 giây)**.
 
-\[
-\text{Burst Size} = 50 \times 10^6 \times 0.001
-\]
-
-\[
-= 50,000 \text{ bytes} = 50 KB
-\]
+$$
+\begin{equation}
+\text{Burst Size} = 50 \times 10^6 \times 0.001 = 50,000 \text{ bytes} = 50 KB
+\end{equation}
+$$
 
 **Cấu hình trên Router Juniper:**
 
