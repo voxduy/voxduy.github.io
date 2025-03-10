@@ -23,7 +23,7 @@ Conventional Commits is a specification that provides a standard format for writ
 
 A Conventional Commit message follows this structure:
 
-```
+```bash
 <type>[optional scope]: <description>
 
 [optional body]
@@ -33,7 +33,7 @@ A Conventional Commit message follows this structure:
 
 ### Example Commit Messages
 
-```
+```bash
 feat(auth): add OAuth2 support
 fix(ui): resolve button alignment issue
 chore(deps): update dependencies
