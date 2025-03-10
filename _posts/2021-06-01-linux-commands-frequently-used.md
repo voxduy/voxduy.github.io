@@ -3,8 +3,8 @@ title: Linux Commands - Frequently Used
 description: This is a collection of linux commands that I have ever been. And I still keep it up-to-date currently.
 author: voxduy
 date: 2021-06-01 02:00:00 +0700
-categories: [Linux]
-tags: [Linux]
+categories: ["System / DevOps", Linux]
+tags: [Linux, System]
 image:
   path: /posts/2021-06-01-linux-commands-frequently-used/linux.png
   width: 800
