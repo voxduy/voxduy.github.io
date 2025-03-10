@@ -41,11 +41,11 @@ math: true
 
 ### **So sánh với các tham số khác**
 
-| Tham số | Ý nghĩa |
-|---------|--------|
-| **Rate Limit (tốc độ giới hạn)** | Giới hạn băng thông tối đa (ví dụ: 10 Mbps) |
-| **Burst-size-limit** | Cho phép vượt tốc độ giới hạn trong ngắn hạn (ví dụ: tối đa 1 MB) |
-| **Policer vs Shaper** | Policer thường drop gói tin khi vượt ngưỡng, Shaper thì xếp hàng chờ |
+| Tham số                          | Ý nghĩa                                                              |
+| -------------------------------- | -------------------------------------------------------------------- |
+| **Rate Limit (tốc độ giới hạn)** | Giới hạn băng thông tối đa (ví dụ: 10 Mbps)                          |
+| **Burst-size-limit**             | Cho phép vượt tốc độ giới hạn trong ngắn hạn (ví dụ: tối đa 1 MB)    |
+| **Policer vs Shaper**            | Policer thường drop gói tin khi vượt ngưỡng, Shaper thì xếp hàng chờ |
 
 ### **Nếu không có burst-size-limit thì điều gì xảy ra?**
 
@@ -91,8 +91,8 @@ Công thức tính:
 \]
 
 Trong đó:
-    - **Burst Size (bytes)**: Lượng dữ liệu tối đa có thể truyền vượt quá rate limit trong một khoảng thời gian ngắn.
-    - **Rate Limit (bps)**: Giới hạn băng thông mong muốn (ở đây là 50 Mbps).
+    - **Burst Size (bytes)**: Lượng dữ liệu tối đa có thể truyền vượt quá rate limit trong một khoảng thời gian ngắn.  
+    - **Rate Limit (bps)**: Giới hạn băng thông mong muốn (ở đây là 50 Mbps).  
     - **Allowed Burst Time (giây)**: Thời gian cho phép vượt quá tốc độ giới hạn trước khi hệ thống can thiệp.
 
 **Giả sử**: cho phép burst trong **1ms (0.001 giây)**.
@@ -115,8 +115,8 @@ set firewall policer LIMIT-50M if-exceeding burst-size-limit 50k
 set firewall policer LIMIT-50M then discard
 ```
 
-`bandwidth-limit 50m`: Giới hạn băng thông ở 50 Mbps.
-`burst-size-limit 50k`: Cho phép tối đa **50 KB dữ liệu** được gửi vượt quá giới hạn trong khoảng thời gian ngắn.
+`bandwidth-limit 50m`: Giới hạn băng thông ở 50 Mbps.  
+`burst-size-limit 50k`: Cho phép tối đa **50 KB dữ liệu** được gửi vượt quá giới hạn trong khoảng thời gian ngắn.  
 `then discard`: Nếu vượt quá cả burst-size-limit, gói tin sẽ bị drop.
 
 **Tùy chỉnh Burst-size-limit:**
@@ -125,9 +125,9 @@ set firewall policer LIMIT-50M then discard
 - Nếu **muốn tránh drop gói tin**, tăng `burst-size-limit` (ví dụ: 100 KB, tương ứng với 2ms).
 
 | Thời gian Burst | Burst-size-limit |
-|----------------|----------------|
-| 0.5ms | 25 KB |
-| 1ms | 50 KB |
-| 2ms | 100 KB |
+| --------------- | ---------------- |
+| 0.5ms           | 25 KB            |
+| 1ms             | 50 KB            |
+| 2ms             | 100 KB           |
 
 Có thể điều chỉnh giá trị này tùy theo yêu cầu thực tế và tình trạng mạng.
