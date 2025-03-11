@@ -5,7 +5,7 @@ date: 2020-09-20 15:00:00 +0700
 categories: [Network, DDoS]
 tags: [Network, DDoS, Security]
 image:
-  path: /posts/2020-09-20-the-udp-so-often-used-in-ddos/cyber-blog-ddos-attacks.png
+  path: /posts/2020-09-20-The-UDP-so-often-used-in-DDoS/cyber-blog-ddos-attacks.png
   width: 800
   height: 500
 pin: false
