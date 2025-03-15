@@ -1,5 +1,5 @@
 ---
-title: Conventional commits and commitlint - A Guide to Cleaner Git Histories
+title: Conventional commits and commitlint - A Guide to cleaner git histories
 author: voxduy
 date: 2025-03-09 00:45:00 +0700
 categories: [Sharing]
