@@ -14,4 +14,34 @@ pin: false
 ![how-do-ssl-tls-works](/posts/2024-10-25-how-do-ssl-tls-works/how_do_ssl_tls_works.gif)
 _How do SSL/TLS certificate works_
 
+### **Bước 1: Trình duyệt yêu cầu kết nối an toàn**
+
+- Khi người dùng nhập URL có giao thức HTTPS (ví dụ: <https://www.google.com>), trình duyệt sẽ gửi yêu cầu kết nối an toàn đến máy chủ web của trang web đó.
+- Nhìn về phía technical (client/server) thì hành động là cụ thể là client sẽ mở một kết nối TCP với máy chủ (Server) trên cổng 443 (thông thường cho HTTPS).
+
+### **Bước 2: Máy chủ gửi chứng chỉ SSL/TLS**
+
+- Khi kết nối TCP đã được thiết lập, quá trình SSL/TLS handshake bắt đầu.
+- Phía Client gửi thông điệp “Client Hello” đến Server, chứa các thông tin ban đầu về phiên mã hóa mà Client hỗ trợ (chẳng hạn phiên bản SSL/TLS, các bộ mật mã – cipher suites, v.v.). Server phản hồi bằng “Server Hello”, trong đó lựa chọn bộ mật mã (CipherSuite) phù hợp, gửi chứng chỉ số của Server (Server certificate) trong đó chứa khóa công khai (public key) của nó, và có thể kèm theo yêu cầu chứng chỉ Client (client certificate request) nếu cần xác thực hai chiều.
+
+### **Bước 3: Trình duyệt xác minh chứng chỉ SSL**
+
+- Trình duyệt kiểm tra xem chứng chỉ SSL của máy chủ có hợp lệ hay không bằng cách xác thực nó với chữ ký số của Tổ chức Chứng nhận (CA - Certificate Authority). Nếu chứng chỉ hợp lệ (được ký bởi tổ chức CA đáng tin cậy, còn hạn hay không, v.v..), trình duyệt sẽ tiếp tục quá trình thiết lập kết nối an toàn.
+
+### **Bước 4: Trình duyệt tạo khóa bí mật chung (Shared Secret)**
+
+- Trình duyệt tạo một khóa bí mật phiên (Shared Secret) để sử dụng cho việc mã hóa dữ liệu. Sau đó, nó mã hóa khóa này bằng khóa công khai của máy chủ (đã nhận ở bước 2).
+
+### **Bước 5: Máy chủ giải mã khóa bí mật phiên**
+
+- Máy chủ sử dụng khóa riêng tư (private key) của mình để giải mã khóa bí mật phiên do trình duyệt gửi đến.
+
+### **Bước 6: Bắt đầu phiên giao tiếp an toàn**
+
+- Sau khi cả trình duyệt và máy chủ có khóa bí mật chung, dữ liệu sẽ được mã hóa bằng khóa này trước khi gửi qua lại giữa hai bên. Điều này đảm bảo rằng dữ liệu không thể bị chặn hoặc sửa đổi bởi các bên thứ ba.
+
+### **Bước 7: Truy cập an toàn vào trang web**
+
+- Khi quá trình thiết lập SSL/TLS hoàn tất, trình duyệt hiển thị biểu tượng ổ khóa trên thanh địa chỉ và cho phép người dùng duyệt web an toàn.
+
 Credit to [Cyber Edition](https://www.linkedin.com/company/cyberedition/)
