@@ -54,6 +54,6 @@ Mối quan hệ giữa SSL và TLS
 - TLS kế thừa và cải tiến SSL: TLS ra đời để thay thế SSL với các thuật toán mã hóa mạnh hơn và hiệu suất tốt hơn.
 - TLS hiện là tiêu chuẩn: Các phiên bản SSL cũ (SSL 2.0, SSL 3.0) đã bị loại bỏ do có nhiều lỗ hổng. Hiện nay, các trang web sử dụng TLS 1.2 hoặc TLS 1.3 để đảm bảo an toàn.
 
-Khi bạn thấy HTTPS, điều đó có nghĩa là trang web đang sử dụng TLS (không phải SSL nữa). Dù nhiều người vẫn nói "chứng chỉ SSL", thực chất các chứng chỉ hiện nay hỗ trợ TLS. Như hình ảnh trên, mô tả quá trình TLS handshake (quá trình bắt tay giữa trình duyệt và máy chủ), mặc dù vẫn gọi là "SSL certificate".
+Khi truy cập một trang web có HTTPS, điều đó có nghĩa là trang web đang sử dụng TLS (không phải SSL nữa). Dù nhiều người vẫn nói "chứng chỉ SSL", thực chất các chứng chỉ hiện nay hỗ trợ TLS. Như hình ảnh trên, mô tả quá trình TLS handshake (quá trình bắt tay giữa trình duyệt và máy chủ), mặc dù vẫn gọi là "SSL certificate".
 
 Credit to [Cyber Edition](https://www.linkedin.com/company/cyberedition/)
