@@ -44,4 +44,16 @@ _How do SSL/TLS certificate works_
 
 - Khi quá trình thiết lập SSL/TLS hoàn tất, trình duyệt hiển thị biểu tượng ổ khóa trên thanh địa chỉ và cho phép người dùng duyệt web an toàn.
 
+---
+
+SSL (Secure Sockets Layer) và TLS (Transport Layer Security) là hai giao thức bảo mật giúp mã hóa dữ liệu truyền tải giữa trình duyệt và máy chủ web. TLS là phiên bản kế thừa và an toàn hơn của SSL. Mặc dù hiện nay TLS là tiêu chuẩn bảo mật phổ biến hơn, nhưng nhiều người vẫn sử dụng thuật ngữ "SSL" khi thực sự đang nói về TLS.
+
+Mối quan hệ giữa SSL và TLS
+
+- SSL là nền tảng ban đầu: Được phát triển bởi Netscape vào những năm 1990, SSL giúp mã hóa dữ liệu nhưng có nhiều lỗ hổng bảo mật.
+- TLS kế thừa và cải tiến SSL: TLS ra đời để thay thế SSL với các thuật toán mã hóa mạnh hơn và hiệu suất tốt hơn.
+- TLS hiện là tiêu chuẩn: Các phiên bản SSL cũ (SSL 2.0, SSL 3.0) đã bị loại bỏ do có nhiều lỗ hổng. Hiện nay, các trang web sử dụng TLS 1.2 hoặc TLS 1.3 để đảm bảo an toàn.
+
+Khi bạn thấy HTTPS, điều đó có nghĩa là trang web đang sử dụng TLS (không phải SSL nữa). Dù nhiều người vẫn nói "chứng chỉ SSL", thực chất các chứng chỉ hiện nay hỗ trợ TLS. Như hình ảnh trên, mô tả quá trình TLS handshake (quá trình bắt tay giữa trình duyệt và máy chủ), mặc dù vẫn gọi là "SSL certificate".
+
 Credit to [Cyber Edition](https://www.linkedin.com/company/cyberedition/)
