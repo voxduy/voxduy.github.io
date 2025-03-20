@@ -10,4 +10,3 @@ image:
 pin: false
 ---
 
-TEST DEPLOY
