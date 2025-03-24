@@ -14,37 +14,17 @@ pin: true
 
 ## File and Directory Management
 
-- **Tạo file với dung lượng bất kì**
+- **Liệt kê nội dung bên trong một thư mục**
 
 ```bash
-truncate -s 20G file
-ls -lh file
+ls -lah
 ```
-> Specifically, we use the -s argument to represent the size of the file in bytes.
-
-- **Tìm kiếm trên hệ thống có tên chứa chuỗi ký tự "docker" ở bất kỳ đâu trong tên tệp hoặc thư mục**
-
-```bash
-'sudo find / -name \*docker*'
-```
-
-## Process Management
-
-## Networking
-
-`man <cmd>` /// khi cần gợi ý cú pháp trên linux
-
-`clear` /// làm sạch cửa sổ dòng lệnh
-
-`ls -lah` /// tenthumuc: Liệt kê nội dung bên trong một thư mục
 
 `cat` /// tentaptin: Hiển thị nội dung của một tập tin lên cửa sổ dòng lệnh
 
 `rm` /// tentaptin: Xóa một tập tin
 
 `cp` /// taptinnguon taptindich: Sao chép một tập tin
-
-`passwd` /// Đổi mật khẩu
 
 `less tentaptin` hoặc `more tentaptin` /// Hiển thị nội dung một tập tin trong cửa sổ dòng lệnh một trang mỗi lần
 
@@ -60,8 +40,6 @@ ls -lh file
 
 `echo chuoi` /// Sao chép chuỗi tới màn hình dòng lệnh
 
-`date` /// Hiển thị ngày và giờ hiện tại
-
 `gzip tentaptin` /// Nén một tập tin
 
 `gunzip tentaptin` /// Giải nén một tập tin
@@ -74,15 +52,41 @@ ls -lh file
 
 `ln existingfile new-link` /// Tạo một đường dẫn tới một tập tin (liên kết cứng)
 
-## System Information
+- **Tạo file với dung lượng bất kì**
 
-`top` /// Hiển thị danh sách các tiến trình đang chạy
+```bash
+truncate -s 20G file
+ls -lh file
+```
+> Specifically, we use the -s argument to represent the size of the file in bytes.
 
-copy toàn bộ thư mục
+- **Tìm kiếm trên hệ thống có tên chứa chuỗi ký tự "docker" ở bất kỳ đâu trong tên tệp hoặc thư mục**
+
+```bash
+'sudo find / -name \*docker*'
+```
+
+- Copy toàn bộ thư mục
 
 ```bash
 scp -r admin@69.69.69.69:/home/admin/<folder_name> /home/duyvn/
 ```
+
+## Process Management
+
+`top` /// Hiển thị danh sách các tiến trình đang chạy
+
+## Networking
+
+`man <cmd>` /// khi cần gợi ý cú pháp trên linux
+
+`clear` /// làm sạch cửa sổ dòng lệnh
+
+`passwd` /// Đổi mật khẩu
+
+`date` /// Hiển thị ngày và giờ hiện tại
+
+## System Information
 
 Check status or restart DNS
 
