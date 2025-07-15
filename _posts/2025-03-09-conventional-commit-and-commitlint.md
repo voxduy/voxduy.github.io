@@ -13,7 +13,7 @@ pin: false
 
 ## Introduction
 
-When working on a software project, maintaining a clean and structured Git history is crucial for collaboration, debugging, and automation. One of the best ways to achieve this is by adopting a consistent commit message format. This is where **Conventional Commits** and **commitlint** come in.
+Maintaining a clean and structured Git history is crucial for collaboration, debugging, and automation. One of the best ways to achieve this is by adopting a consistent commit message format. This is where **Conventional Commits** and **commitlint** come in.
 
 In this post, we’ll explore what Conventional Commits are, why they matter, and how commitlint can help enforce them.
 
