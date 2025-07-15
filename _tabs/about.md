@@ -18,7 +18,7 @@ order: 4
 Some of words to introduce myself:
 
 **Vo Nhat Duy**  
-Senior Network Engineer at VNG Cloud  
+Senior Network Engineer  
 Certifications: JNCIP-SEC | JNCIS-SP | JNCIA-DevOps  
 📧 Email: <nhatduy.inet.s3c@gmail.com>
 
