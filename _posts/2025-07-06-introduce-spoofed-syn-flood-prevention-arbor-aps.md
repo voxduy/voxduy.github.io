@@ -24,7 +24,7 @@ pin: false
 | 1    | Nhận gói **SYN** hướng vào một host được bảo vệ.                                                                | Chặn trước khi SYN đến server.                     |
 | 2    | Gửi lại **ACK** (không kèm SYN) với số SEQ đặc biệt → **“TCP authentication/ACK‑challenge”**.                   | Buộc đầu bên gửi SYN phải chứng minh mình “sống”.  |
 | 3a   | Nếu IP là thật: host thấy ACK bất ngờ ⇒ trả về **RST**/ACK thích hợp → AED **xác thực** IP, chuyển SYN gốc (hoặc yêu cầu host gửi SYN mới) tới máy chủ. | Cho phép lưu lượng hợp lệ, chỉ thêm 1 RTT nhỏ.                      |
-| 3b   | Nếu IP bị giả mạo: **không có RST** quay lại ⇒ AED loại bỏ SYN, chặn phiên kết nối.                            | Bỏ SYN giả trước khi đến server, không tốn tài nguyên bảng kết nối.  |
+| 3b   | Nếu IP bị giả mạo: **không có RST** quay lại ⇒ AED loại bỏ SYN, chặn phiên kết nối.                            | Bỏ spoofed SYN trước khi đến server, không tốn tài nguyên bảng kết nối.  |
 
 ## Vì sao nên kết hợp giữa **TCP SYN Flood Detection** và **Spoofed SYN Flood Prevention**
 
