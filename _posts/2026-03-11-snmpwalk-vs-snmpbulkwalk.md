@@ -4,10 +4,10 @@ author: voxduy
 date: 2026-03-11 08:00:00 +0700
 categories: [Network, General]
 tags: [Network, SNMP]
-image:
-  path: /posts/2026-03-11-snmpwalk-vs-snmpbulkwalk/snmpwalk_vs_snmpbulkwalk.png
-  width: 800
-  height: 500
+#image:
+#  path: /posts/2026-03-11-snmpwalk-vs-snmpbulkwalk/snmpwalk_vs_snmpbulkwalk.png
+#  width: 800
+#  height: 500
 pin: false
 ---
 
