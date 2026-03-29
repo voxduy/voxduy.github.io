@@ -101,7 +101,7 @@ Traffic có PLP high sẽ bắt đầu bị drop từ fill-level 30% với proba
 ## So sánh nhanh
 
 | Tiêu chí | TailDrop | RED |
-|---|---|---|
+| --- | --- | --- |
 | Thời điểm drop | Queue đầy 100% | Trước khi đầy, theo xác suất |
 | Chọn lọc | Không — drop tất cả | Có — dựa trên fill-level + loss-priority |
 | TCP Synchronization | Gây ra | Giảm thiểu |

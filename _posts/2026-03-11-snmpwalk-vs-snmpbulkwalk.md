@@ -73,6 +73,7 @@ Client  --GETBULK(OID_11, max-repetitions=10)--> Agent
 ```
 
 Tham số quan trọng của GETBULK:
+
 - **non-repeaters**: Số OID scalar (không lặp) cần lấy trước.
 - **max-repetitions**: Số lượng OID tối đa lấy trong mỗi lần GETBULK.
 
@@ -87,7 +88,7 @@ snmpbulkwalk -v2c -c public -Cr20 192.168.1.1 1.3.6.1.2.1.2.2
 ## Bảng so sánh
 
 | Tiêu chí | snmpwalk | snmpbulkwalk |
-|---|---|---|
+| --- | --- | --- |
 | Thao tác SNMP | GETNEXT | GETBULK |
 | Phiên bản SNMP hỗ trợ | v1, v2c, v3 | v2c, v3 (không hỗ trợ v1) |
 | Số request/response | Nhiều (1 OID/request) | Ít hơn (nhiều OID/request) |
