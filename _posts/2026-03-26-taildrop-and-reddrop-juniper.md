@@ -1,7 +1,7 @@
 ---
 title: TailDrop và RedDrop trong QoS của Juniper
 author: voxduy
-date: 2026-03-29 08:00:00 +0700
+date: 2026-03-26 08:00:00 +0700
 categories: [Network, General]
 tags: [Network, Juniper]
 #image:
